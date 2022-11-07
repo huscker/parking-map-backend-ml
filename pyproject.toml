@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "parking-map"
+version = "0.0.0"
+description = "parking-map"
+authors = ["pavivin <pavivin@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "parking_map"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.86.0"
+uvicorn = "^0.19.0"
+orjson = "^3.8.1"
+aiobotocore = "^2.4.0"
+tortoise-orm = {extras = ["asyncpg"], version = "^0.19.2"}
+python-multipart = "^0.0.5"
+redis = "^4.3.4"
+
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+include = '\.pyi?$'
+skip-string-normalization = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
