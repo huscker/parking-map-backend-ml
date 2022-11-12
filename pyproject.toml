@@ -15,6 +15,10 @@ aiobotocore = "^2.4.0"
 tortoise-orm = {extras = ["asyncpg"], version = "^0.19.2"}
 python-multipart = "^0.0.5"
 redis = "^4.3.4"
+tortoise = "^0.1.1"
+matplotlib = "^3.6.2"
+pandas = "^1.5.1"
+sentry-sdk = {extras = ["fastapi"], version = "^1.10.1"}
 
 
 [tool.black]
