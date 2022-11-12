@@ -10,3 +10,9 @@ venv/
 
 # Custom
 output.jpg
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/parking-map-backend-ml.iml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
