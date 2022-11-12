@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from views import ReadyResponse
+from app.views import ReadyResponse
 
 
 router = APIRouter()

@@ -1,6 +1,6 @@
 from redis.asyncio import Redis as AioRedis
 from redis.asyncio import from_url
-from settings import REDIS_CONNECTION_STRING
+from app.settings import REDIS_CONNECTION_STRING
 from asyncio import wait_for
 
 class Redis:

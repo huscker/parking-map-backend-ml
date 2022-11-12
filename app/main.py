@@ -2,10 +2,10 @@ from fastapi import FastAPI
 from fastapi.requests import Request
 from fastapi.responses import ORJSONResponse
 
-from controllers import ready
-from services.db import connect_db, init_db
+from app.controllers import ready
+from app.services.db import connect_db, init_db
 
-import exceptions
+import app.exceptions as exceptions
 
 
 app = FastAPI()
