@@ -8,6 +8,10 @@ class Token(BaseModel):
     refresh_expires_in: Optional[int]
     token_type: Optional[str]
 
+class TokenOut(BaseModel):
+    access_token: str
+    token_type: str
+
 class UserIn(BaseModel):
     name: str
     given_name: str
