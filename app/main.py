@@ -2,20 +2,22 @@ from fastapi import FastAPI
 from fastapi.requests import Request
 from fastapi.responses import ORJSONResponse
 
-from app.controllers import ready
+from app.controllers import ready, auth
 from app.services.db import connect_db, init_db
+from app.services.keycloak_driver import KeycloakDriver
 
 import app.exceptions as exceptions
 
 
 app = FastAPI()
 app.include_router(ready.router)
-
+app.include_router(auth.router)
 
 @app.on_event("startup")
 async def startup():
     await connect_db()
     await init_db()
+    await KeycloakDriver.connect_client_admin()
 
 
 @app.exception_handler(Exception)
