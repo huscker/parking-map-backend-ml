@@ -33,3 +33,6 @@ down:
 
 open_postgres:
 	PGPASSWORD=${DB_PASSWORD} docker exec -it parking-map-backend-postgresql psql -U ${DB_USERNAME} -d ${DB_NAME}
+
+open_keycloak:
+	docker exec -it parking-map-backend-keycloak bash
