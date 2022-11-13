@@ -18,6 +18,7 @@ black = "^22.10.0"
 async-keycloak = "^0.28.6"
 requests = "^2.28.1"
 aiohttp = "^3.8.3"
+httpx = "^0.23.0"
 
 
 [tool.black]

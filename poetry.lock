@@ -647,7 +647,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "689fb7eda528bd106057f6cd6160c11061bdc4661119b018cce67326d1f993d1"
+content-hash = "634c8d535b8c3d5f970f33548e7f5ea13c7a23870b839365398cbbcc0f3dfefb"
 
 [metadata.files]
 aiobotocore = [
